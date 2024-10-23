@@ -102,7 +102,7 @@ endif()
 install(DIRECTORY DESTINATION ${CSDK_HEADER_INSTALL_PATH})
 # Set the install directory for shared libraries.
 if(INSTALL_TO_SYSTEM)
-    set(CSDK_LIB_INSTALL_PATH "${CMAKE_INSTALL_LIBDIR}/aws")
+    set(CSDK_LIB_INSTALL_PATH "${CMAKE_INSTALL_LIBDIR}")
 else()
     if(NOT DEFINED CSDK_LIB_INSTALL_PATH)
         set(CSDK_LIB_INSTALL_PATH "${ROOT_DIR}/project/lib")
