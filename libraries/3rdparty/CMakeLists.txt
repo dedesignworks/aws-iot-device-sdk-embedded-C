@@ -85,3 +85,9 @@ set_source_files_properties(
     PROPERTIES COMPILE_FLAGS
     "-Wno-pedantic"
 )
+
+install(TARGETS
+    tinycbor
+    mbedtls
+    DESTINATION ${CSDK_LIB_INSTALL_PATH}
+)
